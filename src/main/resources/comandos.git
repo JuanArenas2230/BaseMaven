@@ -1,0 +1,63 @@
+Algunos comandos de Git.
+
+INICIAR REPOSITORIO LOCAL
+    $ git init
+
+ADIONAR CAMBIOS
+    $ git add .
+
+RESPALDAR LOS CAMBIOS REPOSITORIO LOCAL
+    $ git commit - m "Este es el mensaje del commit"
+
+VERIFICAR LOS COMMIT
+    $ git log
+
+LISTAR BRANCH
+    $ git branch
+
+LISTAR BRANCH LOCAL Y REMOTAS
+    $ git branch -a
+    * develop
+      master
+      remotes/origin/develop
+      remotes/origin/master
+
+
+CREAR BRANCH
+    $ git branch nombrerama
+
+CAMBIAR A BRANCH
+    $ git checkout nombrerama
+
+CREAR BRANCH Y CAMBIAR
+    $ git checkout -b nombrerama
+
+--- PLATAFORMA EN NUBE ---
+
+RECARGAR TODAS LAS RAMAS REMOTAS
+    $ git fetch
+
+RECARGAR  LA RAMAS REMOTAS develop
+    $ git fetch origin develop
+
+CREAR, CAMBIAR DE RAMA Y DESCARGAR DESDE REMOTO DEVELOP
+    $ git checkout -b develop origin/develop
+
+DESCARGAR CAMBIOS DE LA PLATAFORMA
+    $ git pull
+
+DESCARGAR CAMBIOS DE LA PLATAFORMA ESPECIFICAR LA RAMA
+    $ git pull origin develop
+
+VERIFICA EN QUE REPOSITORIO SE RESPALDA
+$ git remote -v
+    origin  https://github.com/vinnikam/BaseMaven.git (fetch)
+    origin  https://github.com/vinnikam/BaseMaven.git (push)
+
+SUBIR CAMBIOS A LA PLATAFORMA
+    $ git push
+
+SUBIR CAMBIOS A LA PLATAFORMA Y CREAR LA RAMA EN REMOTO
+    $ git push -u origin nombrerama
+    ó
+    $ git push --set-upstream origin nombrerama
